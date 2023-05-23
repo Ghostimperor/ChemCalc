@@ -1,0 +1,47 @@
+MDScreen :
+    MDTextField:
+        id: chem
+        hint_text: " Формула"
+        helper_text: " Проверьте корректность введённой формулы"
+        helper_text_mode: "on_error"
+        pos_hint: {'center_x': 0.5, 'center_y': 0.75}
+        multiline: False
+
+    MDTextField:
+        id: mass
+        hint_text: " Масса, г"
+        helper_text: " Масса обозначается числом"
+        helper_text_mode: "on_error"
+        pos_hint: {'center_x': 0.5, 'center_y': 0.65}
+        multiline: False
+
+    MDTextField:
+        id: volm
+        hint_text: " Объём, л"
+        helper_text: " Объём обозначается числом, не равным 0"
+        helper_text_mode: "on_error"
+        pos_hint: {'center_x': 0.5, 'center_y': 0.55}
+        multiline: False
+
+    MDTextField:
+        id: molm
+        hint_text: " Молярная масса, г/моль"
+        pos_hint: {'center_x': 0.5, 'center_y': 0.45}
+        multiline: False
+
+    MDTextField:
+        id: amnt
+        hint_text: " Количество в-ва, моль"
+        pos_hint: {'center_x': 0.5, 'center_y': 0.35}
+        multiline: False
+
+    MDTextField:
+        id: conc
+        hint_text: " Концентрация, моль/л"
+        pos_hint: {'center_x': 0.5, 'center_y': 0.25}
+        multiline: False
+
+    MDRectangleFlatButton:
+        text: " Вычислить"
+        pos_hint: {'center_x': 0.5, 'center_y': 0.15}
+        on_press: app.main_func()
