@@ -1,7 +1,6 @@
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
-import pyparsing
 from kivy.lang import Builder
 from kivymd.app import MDApp
 from periodictable import formula
@@ -36,7 +35,7 @@ class ChemCalc(MDApp):
         chem = chem.replace('*', '+').replace('•', '+').replace('@', '+')
         try:
             chem = formula(chem)
-        except pyparsing.exceptions.ParseException:
+        except:
             return self.chem_error()
         molm = chem.mass
         self.root.ids.molm.text = str(molm)

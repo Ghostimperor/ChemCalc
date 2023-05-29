@@ -4,7 +4,7 @@ MDScreen :
         hint_text: " Формула"
         helper_text: " Проверьте корректность введённой формулы"
         helper_text_mode: "on_error"
-        pos_hint: {'center_x': 0.5, 'center_y': 0.75}
+        pos_hint: {'center_x': 0.5, 'center_y': 0.85}
         multiline: False
 
     MDTextField:
@@ -12,7 +12,7 @@ MDScreen :
         hint_text: " Масса, г"
         helper_text: " Масса обозначается числом"
         helper_text_mode: "on_error"
-        pos_hint: {'center_x': 0.5, 'center_y': 0.65}
+        pos_hint: {'center_x': 0.5, 'center_y': 0.75}
         multiline: False
 
     MDTextField:
@@ -20,7 +20,7 @@ MDScreen :
         hint_text: " Объём, л"
         helper_text: " Объём обозначается числом, не равным 0"
         helper_text_mode: "on_error"
-        pos_hint: {'center_x': 0.5, 'center_y': 0.55}
+        pos_hint: {'center_x': 0.5, 'center_y': 0.65}
         multiline: False
 
     MDTextField:
@@ -28,18 +28,21 @@ MDScreen :
         hint_text: " Молярная масса, г/моль"
         pos_hint: {'center_x': 0.5, 'center_y': 0.45}
         multiline: False
+        readonly: True
 
     MDTextField:
         id: amnt
         hint_text: " Количество в-ва, моль"
         pos_hint: {'center_x': 0.5, 'center_y': 0.35}
         multiline: False
+        readonly: True
 
     MDTextField:
         id: conc
         hint_text: " Концентрация, моль/л"
         pos_hint: {'center_x': 0.5, 'center_y': 0.25}
         multiline: False
+        readonly: True
 
     MDRectangleFlatButton:
         text: " Вычислить"
